@@ -1,0 +1,138 @@
+.footer {
+	margin-top: 130px;
+}
+
+.footer__logo {
+	display: block;
+	margin: 0 auto 130px;
+}
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 120px;
+}
+
+.footer-info__title {
+	font-family: "Gilroy-Bold";
+	font-style: normal;
+	font-weight: 700;
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: #555;
+}
+
+.footer-info-address {
+	max-width: 345px;
+}
+
+.footer-info__subtitle {
+	font-family: "Gilroy-Regular";
+	font-size: 24px;
+	font-style: normal;
+	color: #555;
+}
+
+.footer-info__subtitle--hover:hover {
+	color: var(--secondary-color);
+}
+
+.footer-info-numbers {
+	display: flex;
+	flex-direction: column;
+	max-width: 190px;
+}
+
+.footer-info-mail {
+	max-width: 175px;
+}
+
+.footer-info___btn {
+	max-width: 290px;
+	width: 100%;
+	height: 65px;
+	padding: 10px 0;
+	border: var(--orange-color) solid 4px;
+	background-color: transparent;
+	font-family: "Gilroy-Medium";
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	transition: color 0.2s ease;
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 10;
+}
+
+.footer-info___btn::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: var(--orange-color);
+	transition: all 0.2s linear;
+}
+
+.footer-info___btn:hover {
+	color: var(--orange-color);
+}
+
+.footer-info___btn:hover.footer-info___btn::before {
+	width: 0;
+}
+
+.footer-nav {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1040px;
+	width: 100%;
+	margin: 0 auto 65px;
+	height: 88px;
+}
+
+.footer__inner {
+	width: 100%;
+	height: 88px;
+	background-color: #f7f8fa;
+}
+
+.footer-nav__list a {
+	padding: 10px 5px;
+	font-family: "Gilroy-Medium";
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+
+.footer-nav__list a:hover {
+	color: var(--secondary-color);
+}
+
+.footer__copyright {
+	text-align: center;
+	font-size: 16px;
+	color: #808080;
+	padding-bottom: 50px;
+}
+
+.footer__copyright a {
+	color: inherit;
+	display: inline;
+}
+
+.footer__copyright a:hover {
+	text-decoration: underline;
+}
+
+.footer__copyright br:last-child {
+	display: none;
+}
+
+.footer__copyright span {
+	margin: 0 5px;
+}
